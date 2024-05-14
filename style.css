@@ -1,0 +1,145 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kanit;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    344deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 83, 154, 1) 44%,
+    rgb(9, 149, 177) 100%
+  );
+}
+.container {
+  border: 0.5px solid #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px 5px aqua;
+  display: flex;
+  flex-flow: column;
+}
+.app-name {
+  color: black;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #00ffea, #f7f5ff, #d1ff02, #ff9900);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+}
+.input-box {
+  position: relative;
+}
+.pass__box {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  font-size: 19px;
+  padding: 0 45px 0 5px;
+  text-overflow: ellipsis;
+  color: rgba(51, 51, 51, 0.933);
+}
+.copy {
+  position: absolute;
+  margin-top: 6px;
+  right: 5px;
+
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 7px;
+  background-color: #2678ec;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.copy:active {
+  background-color: #809ce2;
+}
+.cpy::before {
+  content: 'Copied';
+  position: absolute;
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: #560ad0;
+  top: 41px;
+  padding: 5px;
+  border-radius: 4px;
+  right: -15px;
+  z-index: 2;
+}
+.cpy::after {
+  content: '';
+  position: absolute;
+  font-size: 15px;
+
+  background-color: #560ad0;
+  top: 37px;
+  padding: 5px;
+
+  right: 10px;
+  transform: rotate(45deg);
+}
+.pass-length-div {
+  display: flex;
+  margin: 15px 0 15px 0;
+  justify-content: center;
+}
+.pass-length-div .pass-text {
+  margin-right: 5px;
+  font-size: 22px;
+  color: #fff;
+}
+.pass-length {
+  margin-right: 5px;
+  font-size: 24px;
+  color: #fff;
+}
+.row {
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.row label {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 55px;
+}
+.ckbox {
+  width: 18px;
+  margin-right: 65px;
+  cursor: pointer;
+}
+.submit-div {
+  display: flex;
+  justify-content: center;
+}
+.generate-btn {
+  width: 120px;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: #accf0d;
+  margin-bottom: 5px;
+}
+.generate-btn:hover {
+  background-color: #d0ff00;
+}
