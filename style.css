@@ -32,6 +32,7 @@ body {
 }
 .app-name {
   color: black;
+  text-align: center;
   margin-bottom: 10px;
   background: linear-gradient(to right, #00ffea, #f7f5ff, #d1ff02, #ff9900);
   background-clip: text;
